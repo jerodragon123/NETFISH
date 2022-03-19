@@ -1,0 +1,94 @@
+html {
+	background-color: #000;
+	color: #FFF;
+}
+
+.home {
+	background-color: #000;
+}
+
+label {
+	display: inline-block;
+	width: 250px;
+	vertical-align:baseline;
+}
+
+form {
+	display: block;
+}
+
+.forminput {
+	background-color: #000;
+	border: none;
+	color: #FFF;
+	border-bottom: 1px #FFF solid;
+}
+
+.loginbtn, .link, .registerbtn {
+	background-color: #000;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	text-decoration: none;
+}
+.section {
+	max-width: 900px;
+	margin: 60px auto;
+	padding: 90px 30px;
+	background-color: #f41213;
+	color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	
+	h2 {
+		font-size: 3em;
+		margin-bottom: 15px;
+	}
+	p {
+		line-height: 1.625em;
+		margin: 0 auto;
+		max-width: 480px;
+	}
+}
+
+script {
+	text-align: center;
+}
+
+li {
+	transition: 0.5s all ease;
+	text-decoration: none;
+    list-style-type: none;
+	padding: 10px;
+	background-color: #f41213;
+	color: #fff;
+	border-radius: 5px;
+    display: inline-block;
+	margin: 30px 30px;
+}
+
+.nav, .nav-admin {
+    float: right;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding-top: 35px;	
+	height: 60px;
+	top: 0;
+	border-radius: 5px;
+}
+
+.logo {
+	border-radius: 5px;
+	width: 400px;
+
+}
+
+.content {
+	text-align: center;
+	margin-top: 100px;
+	margin: 200px auto;
+	width: 500px;
+}

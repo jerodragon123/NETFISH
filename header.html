@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type"
+        content="text/html; charset=UTF-8">
+    <title>Netfish</title>
+    <link rel="stylesheet" href="css/stylesheet.scss"/>
+    <script>
+        function logout() {
+            var logout  = confirm('Weet u zeker dat u wilt uitloggen?');
+            if(logout) {
+                location.href='index.php?page=logout';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="icon_container">
+            <img class="logo" src="assets/img/Logo.jpg" alt="logo">
+            <?php
+            if(isset($_SESSION["ID"]) &&
+            $_SESSION["STATUS"] == "ACTIEF") {
+                if($_SESSION["ROL"]==0) {
+                ?>
+                <div class="nav">
+                    <ul>
+                        <li onclick="location.href='index.php?page=movie_list'">Video's</li>
+                        <li onclick="logout()">Uitloggen</li>
+                    </ul>
+                </div>
+                <?php
+                }elseif($_SESSION["ROL"]==1){
+                ?>
+                <div class="nav-admin">
+                    <ul>
+                        <li onclick="location.href='index.php?page=add_movie'">Film toevoegen</li>
+                        <li onclick="location.href='index.php?page=movie_list'">Film lijst</li>
+                        <li onclick="location.href='index.php?page=movie_edit'">Beheer</li>
+                        <li onclick="logout()">Uitloggen</li>
+                    </ul>
+                </div>
+    
+                <?php
+              }
+            }
+            ?>
+        </div>
+
+    </div>
+</body>
+</html>

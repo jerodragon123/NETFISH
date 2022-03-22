@@ -22,7 +22,7 @@ function mailing($recipientStreet, $recipientName, $subject, $message){
 
     // E-mail opstellen
     $mail->isHTML(true);
-    $mail->SetFrom("aardappelrasper@gmail.com", "Jeroen");
+    $mail->SetFrom("GEBRUIKERSNAAM VAN GMAIL", "AFZENDER");
     $mail->Subject = $subject;
     $mail->CharSet = 'UTF-8';
     $message = "<body style=\ 'font-family: Verdana, Verdana, Genevam, sans-serif; font-size: 14px; color: #000;\'>" . $message . "</body></html>";
